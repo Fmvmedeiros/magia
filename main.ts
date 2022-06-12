@@ -1,8 +1,6 @@
 function Muda_Imagem (imagemOn: boolean) {
     if (coração_está_ligado) {
-        while (true) {
-            basic.showIcon(IconNames.Heart)
-        }
+        basic.showIcon(IconNames.Heart)
     } else {
         basic.clearScreen()
     }
