@@ -1,3 +1,6 @@
+input.onButtonPressed(Button.A, function () {
+    Luz_inicial = input.lightLevel()
+})
 function Muda_Imagem (imagemOn: boolean) {
     if (coração_está_ligado) {
         basic.showIcon(IconNames.Heart)
@@ -7,7 +10,8 @@ function Muda_Imagem (imagemOn: boolean) {
 }
 let Luz_agora = 0
 let coração_está_ligado = false
-let Luz_inicial = input.lightLevel()
+let Luz_inicial = 0
+Luz_inicial = input.lightLevel()
 coração_está_ligado = false
 basic.forever(function () {
     Luz_agora = input.lightLevel()
